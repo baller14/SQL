@@ -1,0 +1,21 @@
+CREATE TABLE Store (id INTEGER PRIMARY KEY, Item TEXT, Quantity INTEGER, "Price(In $)" INTEGER, Info TEXT);
+
+INSERT INTO Store VALUES (1, "Chicken", 20, 10, "Chicken Strips");
+INSERT INTO Store VALUES (2, "Taco", 25, 12, "Beef Taco");
+INSERT INTO Store VALUES (3, "Cheesie", 35, 4, "Grilled Cheese");
+INSERT INTO Store VALUES (4, "Cookies", 52, 12, "Pack of Cookies");
+INSERT INTO Store VALUES (5, "Sub", 8, 13, "Sub Sandwich");
+INSERT INTO Store VALUES (6, "Burrito", 5, 10, "Beef Burrito");
+INSERT INTO Store VALUES (7, "Pizza", 100, 2, "Slice of Pizza");
+INSERT INTO Store VALUES (8, "Wings", 30, 15, "Basket of Chicken Wings");
+INSERT INTO Store VALUES (9, "Mac", 2, 100, "Specialty Mac & Cheese");
+INSERT INTO Store VALUES (10, "Soup", 100, 1, "Soup");
+INSERT INTO Store VALUES (11, "Burger", 2, 250, "Black angus burger");
+INSERT INTO Store VALUES (12, "Steak", 0, 10000, "Kobe Beef");
+INSERT INTO Store VALUES (13, "Fries", 25, 10, "Truffle fries");
+INSERT INTO Store VALUES (14, "Tots", 60, 8, "Basket of Tater tots");
+INSERT INTO Store VALUES (15, "Brownie", 1, 3000, "The PERFECT brownie");
+
+SELECT * FROM Store;
+SELECT * FROM Store WHERE Price > 100 ORDER BY "Price(IN $)" ;
+
